@@ -1,6 +1,2 @@
-edu.cnm.deepdive.Canis rex = new CanisLupusFamiliaris();
+edu.cnm.deepdive.Trainable[] menagerie = {		new edu.cnm.deepdive.Chihuahua(),		new edu.cnm.deepdive.Seal()};for (edu.cnm.deepdive.Trainable animal : menagerie) {	animal.perform();}
 
-rex.vocalize();
-rex.about();
-rex.hunt();
-System.out.println(rex);

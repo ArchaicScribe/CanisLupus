@@ -7,7 +7,6 @@ public abstract class Canis {
 	private final int [] data;
 	
 	
-	
 	public Canis() {
 		System.out.println("Canis: :new");
 	}

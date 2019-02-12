@@ -2,16 +2,15 @@ package edu.cnm.deepdive;
 
 import java.util.Arrays;
 
-public class CanisLupusFamiliaris extends CanisLupus {
+public class CanisLupusFamiliaris extends CanisLupus implements Trainable{
 
 	private boolean goodBoy;
 	
 	public CanisLupusFamiliaris() {
-		this(true);
-		System.out.println("CanisLupusFamiliaris::new");
-		getData()[2] = 5;
-		System.out.println(Arrays.toString(getData()));
+	this(true);
+	System.out.println("CanisLupusFamiliaris: : new");
 	}
+
 	
 	public CanisLupusFamiliaris(boolean goodBoy) {
 		this.goodBoy = goodBoy;
@@ -28,6 +27,12 @@ public class CanisLupusFamiliaris extends CanisLupus {
 
 	public static void about() {
 		System.out.println("Canis Lupus Familiaris is a subspecies of Canis Lupus, produced through selective breeding.");
+	}
+@Override
+public void perform() {
+	System.out.println("Play fetch");
+	
+
 	}
 
 }
